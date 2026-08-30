@@ -20,7 +20,7 @@ RUN apt-get update && \
 
 RUN pip install --no-cache-dir --upgrade pip pipenv
 
-COPY Pipfile ./
+COPY Pipfile Pipfile.lock ./
 RUN pipenv install --system --deploy --dev
 
 COPY . .
