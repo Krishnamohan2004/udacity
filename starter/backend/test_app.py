@@ -1,5 +1,9 @@
-from . import app
 import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from __init__ import app
 
 
 def test_movies_endpoint_returns_200():

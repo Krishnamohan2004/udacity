@@ -38,6 +38,8 @@ jobs:
       - name: Run lint
         run: |
           pipenv run flake8 .
+        env:
+          PYTHONPATH: .
 
   test:
     name: Backend Test
@@ -68,6 +70,8 @@ jobs:
       - name: Run tests
         run: |
           pipenv run pytest
+        env:
+          PYTHONPATH: .
 
   build:
     name: Backend Build
