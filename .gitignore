@@ -1,0 +1,22 @@
+# Local .terraform directories
+**/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Node modules & build outputs
+**/node_modules/
+**/build/
+**/dist/
+
+# Python / Pipenv
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
